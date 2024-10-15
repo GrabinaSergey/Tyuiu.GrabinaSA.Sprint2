@@ -45,6 +45,6 @@ namespace Tyuiu.GrabinaSA.Sprint2.Task6.V10.Lib
             res = ($"{n}.{m}.{g}");
             return res;
         }
-        }
+        
     }
 }
