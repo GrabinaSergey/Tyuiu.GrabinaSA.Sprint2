@@ -5,14 +5,13 @@ namespace Tyuiu.GrabinaSA.Sprint2.Task7.V1.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckDotInArea()
         {
             DataService ds = new DataService();
-
-            double x = 0.1, y = 0.5;
-            bool wait = true;
-            var res = ds.CheckDotInShadedArea(x, y);
-            Assert.AreEqual(wait, res);
+            double x = 0.2;
+            double y = 0.6;
+            bool res = ds.CheckDotInShadedArea(x, y);
+            Assert.AreEqual(res, true);
         }
     }
 }
